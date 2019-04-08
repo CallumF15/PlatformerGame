@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     #region fields
 
     public static Vector3 PlayerPosition;
-    public static int PlayerSpeed;
+    public int PlayerSpeed;
 
     #endregion
 
@@ -56,12 +56,11 @@ public class PlayerMovement : MonoBehaviour {
         PlayerPosition = gameObject.transform.position;
     }
 
-
     public void setSpawnLocation()
     {
         GameObject stairPosition = new GameObject();
-        stairPosition.GetComponent<StairGenerator>();
-        stairPosition.
+        stairPosition.GetComponent<TerrainGenerator>();
+        
 
         gameObject.transform.position = PlayerPosition;
     }

@@ -23,6 +23,7 @@ public class platformMovement : MonoBehaviour {
         newForwardPositionZ = transform.position.z + distanceToMove;
         newBackwardPositionZ = transform.position.z - distanceToMove;
         hasMoved = false;
+        
     }
 	
 	// Update is called once per frame
