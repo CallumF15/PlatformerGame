@@ -5,10 +5,8 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour {
 
     public float speed;
-    int keyPressCount = 0;
 
     private TerrainGenerator m_terraingeneration;
-
 
 	// Use this for initialization
 	void Start () {
@@ -20,24 +18,10 @@ public class PlayerInput : MonoBehaviour {
      
         if (Input.GetKeyDown("space"))
         {
-            //GameObject.FindGameObjectWithTag("Player").transform.position += transform.right * Time.deltaTime * PlayerMovement.PlayerSpeed;
-            //GameObject player = GameObject.FindGameObjectWithTag("Player");
-            //int speed = player.GetComponent<PlayerMovement>().playerSpeed;
-
-            //GameObject.FindGameObjectWithTag("Player").transform.position += transform.right * Time.deltaTime * speed; ;
-         
-            GameObject.FindGameObjectWithTag("Player").transform.position += new Vector3(1, 0, 0);
-
-            keyPressCount++;
-            if (keyPressCount == 2)
-            {
-                m_terraingeneration.DeletePreviousChunk();
-                keyPressCount = 1;
-            }      
-        }
-        else
-        {
-
+            int b = m_terraingeneration._LastCPosition;
+            Vector3 platformPosition = m_terraingeneration.GetFirstPlatformPosition();
+            GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(platformPosition.x, platformPosition.y + 1, 0);
+            //GameObject.FindGameObjectWithTag("Player").transform.position += new Vector3(1, 0, 0);
         }
     }
 }

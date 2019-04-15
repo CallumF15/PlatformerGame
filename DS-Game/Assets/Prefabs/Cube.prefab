@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 65694680530856030}
   - component: {fileID: 23586447298222778}
   - component: {fileID: 114351729899565070}
+  - component: {fileID: 114847994249535382}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +108,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b03c295742f3e478a88a8d8835aa74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   distanceToMove: 5
-  delay: 1
+  delay: 3
+--- !u!114 &114847994249535382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921777308010434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8427f162c78b94495f5e16aeab45dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

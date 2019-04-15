@@ -26,13 +26,5 @@ public class CubeColor : MonoBehaviour
     Random.Range(0f, 1f));
 
         GetComponent<Renderer>().material.color = background2;
-
-
-        //Renderer rend = GetComponent<Renderer>();
-
-        //Material material;
-        //material.SetColor = background2;
-
-
     }
 }

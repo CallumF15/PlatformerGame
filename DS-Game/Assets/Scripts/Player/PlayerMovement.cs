@@ -16,7 +16,6 @@ public class PlayerMovement : MonoBehaviour {
 
     #region Getters / Setters
 
-    [Obsolete("this proper is obselete. use this method instead", false)]
     private Vector3 _PlayerPosition
     {
         get
